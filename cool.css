@@ -1,0 +1,32 @@
+body {
+  background-color: thistle;
+}
+
+#cooltext {
+  color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ani {
+  animation: move 2s 1 forwards;
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  font-size: 60px;
+  white-space: pre;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
